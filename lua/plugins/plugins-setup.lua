@@ -61,6 +61,11 @@ return require('packer').startup(function(use)
   use("akinsho/bufferline.nvim") -- buffer line
   use("lewis6991/gitsigns.nvim") -- git sign
 
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.6',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end

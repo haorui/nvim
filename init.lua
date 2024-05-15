@@ -2,6 +2,7 @@ print('init.lua loaded')
 
 require("plugins.plugins-setup")
 
+-- core
 require("core.options")
 require("core.keymaps")
 
@@ -15,3 +16,4 @@ require("plugins.comment")
 require("plugins.autopairs")
 require("plugins.bufferline")
 require("plugins.gitsigns")
+require("plugins.telescope")
